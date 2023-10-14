@@ -1,0 +1,30 @@
+{# templates/layout.html.twig #}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Aplicación Symfony</title>
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Aplicación Symfony</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="{{ path('app_login') }}">Iniciar Sesión</a></li>
+            <li><a href="{{ path('user_profile') }}">Perfil</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; {{ 'now'|date('Y') }} Mi Aplicación Symfony</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,14 @@
+doctrine:
+    dbal:
+        driver: 'pdo_sqlsrv'
+        host: 'MERCEDES_13_LAPTO'
+        port: '1433'
+        dbname: 'Catalogo_Base'
+        user: 'MSSQL_SERVER'
+        password: 'Enrique_1020_@'
+        charset: utf8
+
+    orm: 
+        auto_generate_proxy_classes: '%kernel.debug%'
+        naming_strategy: doctrine.orm.naming_strategy.underscore
+        auto_mapping: true
